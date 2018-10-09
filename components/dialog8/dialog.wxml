@@ -1,0 +1,15 @@
+<!--components/Dialog/dialog.wxml-->
+
+
+<view class='wx_dialog_container' hidden="{{!isShow}}">
+  <view class='wx-mask'></view>
+  <view class='wx-dialog'>
+    <icon type="clear" class='wx-dialog-btn' size="20" catchtap='_confirmEvent' />
+    <view class='wx-dialog-title' hidden='{{title==""}}'>{{ title }}</view>
+    <view class='wx-dialog-content '>
+      <text> 通过朋友圈、微博、抖音传播；发送截图至平台审核通过后将获得50积分。（审核须知：截图必须清晰的展现千色色的logo及产品，无屏蔽他人并发布一小时以上。）</text>
+
+    </view>
+
+  </view>
+</view>

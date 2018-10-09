@@ -1,0 +1,21 @@
+<!--pages/query/query.wxml-->
+<view class="money">
+  <view class="top-img">
+    <image src="/images/my-platform.png"></image>
+  </view>
+  <scroll-view scroll-y="true" style='padding-bottom: {{height}}rpx;'>
+
+    <view class="queryDate" wx:for="{{data}}">
+      <view class="timer">
+        <image src="/images/discount.png"></image>{{item.date}}
+      </view>
+      <view class="moneyBox" wx:for="{{item.list}}">
+        <view style="color:{{item.color}}">
+          <text class="name">{{item.type}}</text>
+          <text class="num">{{item.money}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <include src="/components/footer/footer.wxml" />
+</view>

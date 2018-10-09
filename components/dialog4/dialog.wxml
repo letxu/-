@@ -1,0 +1,31 @@
+<!--components/Dialog/dialog.wxml-->
+
+
+<view class='wx_dialog_container' hidden="{{!isShow}}">
+  <view class='wx-mask' ></view>
+  <view class='wx-dialog'>
+    <icon type="clear" class='wx-dialog-btn' size="20" catchtap='_confirmEvent' />
+    <view class='wx-dialog-title' hidden='{{title==""}}'>{{ title }}</view>
+    <view class='wx-dialog-content '>
+      <view>1、审核流程：【购买千色色沙拉】→【进入千色色会员+小程序】→【注册充值成为会员】→【首页-审核返现】→【选择购买渠道、下单门店、输入订单号】→【个人-返现查询】→【审核成功-通过微信返现】→【审核失败-微信提醒失败原因】</view>
+      <view>2、充值成功后的订单可享受会员权益。</view>
+      <view>3、平台币不可兑换现金。</view>
+      <view>4、平台币无法抵充部分消费款，如余额不足应及时充值。</view>
+      <view>5、外卖订单，返现部分为减去配送费后的金额。配送费以结算明细中的金额为准。</view>
+      <view>6、订单手机号应与会员注册手机号码一致，否则将审核失败。</view>
+      <view>7、平台币到期后会转为冻结状态，充值或邀请好友可激活冻结平台币。</view>
+      <view>8、审核失败原因</view>
+
+      <view>（1）	平台币到有效期后将无法通过审核</view>
+      <view>（2）	订单号输入错误将无法通过审核</view>
+      <view>（3）	下单门店选择错误时将无法通过审核</view>
+      <view>（4）	下单门店不参与此活动将无法通过审核</view>
+       <view>（5）	平台币余额不足以扣除这笔餐费时将无法通过审核</view>
+      <view>（6）	下单超过48小时后仍未提交审核将无法通过审核</view>
+      <view>（7）	其他</view>
+      <view>9、本次活动所有解释权归千色色沙拉所有。</view>
+ 
+    </view>
+
+  </view>
+</view>

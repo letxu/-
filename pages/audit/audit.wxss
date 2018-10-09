@@ -1,0 +1,78 @@
+
+.section{
+  width: 80%;
+  margin: 0 auto 30rpx;
+  background: #f7f7f7;
+  border: 1px solid #b5b5b5;
+
+  color: #999;
+  font-size: 30rpx;
+  border-radius: 15rpx;
+ 
+}
+.img-upload{
+   width: 80%;
+  margin: 0 auto 30rpx;
+}
+.section .picker{
+  padding: 20rpx 30rpx;
+  position: relative
+}
+.picker .select-icon{
+  position:absolute;
+  right:0;
+  width:55rpx;
+  height:100%;
+  background:#9e9ea0;
+  top:0;
+  text-align: center;
+  border-top-right-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+   font-size: 30rpx;
+}
+.picker image{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-left: -15rpx;
+  margin-top: -15rpx;
+  width: 30rpx;
+  height: 30rpx
+}
+.section .info{
+  padding: 13rpx 30rpx;
+  font-size: 30rpx;
+  color: #999
+}
+button{
+  width: 40%;
+  margin: 0 auto 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+   font-size: 30rpx;
+   color: #fff;
+   padding-left: 0
+}
+.introduce {
+  text-align: center;
+}
+.btn-img{
+  width: 300rpx;
+}
+
+.audit-img{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.audit-img image{
+
+  width:100rpx;
+  height:100rpx;
+  margin-top: 20rpx;
+  margin-bottom:360rpx;
+
+}
+.introduce>image{
+  margin: 0 10rpx;
+}

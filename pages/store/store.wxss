@@ -1,0 +1,126 @@
+/* pages/store/store.wxss */
+
+.store {
+  width: 90%;
+  margin: 0 auto 30rpx;
+}
+
+.store-tab {
+  font-size: 30rpx;
+  text-align: right;
+  width: 100%;
+  margin: 0 auto;
+  color: #999;
+}
+
+.store-tab text {
+  padding: 0 15rpx;
+  display: inline-block;
+  border-right: 1px solid #999;
+}
+
+.store-tab text:first-child {
+  border-left: 1px solid #999;
+}
+
+.store-tab text.active {
+  color: #6cc4c6;
+}
+
+.search {
+  position: relative;
+}
+
+.search input {
+  margin-top: 25rpx;
+  width: 70%;
+  padding: 0 0 0 16%;
+  height: 80rpx;
+  box-sizing: border-box;
+  line-height: 80rpx;
+  border-radius: 15rpx;
+  border: 1px solid #b5b5b5;
+  color: #999;
+  font-size: 30rpx;
+}
+
+.search image {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  margin-top: -20rpx;
+  margin-left: -20rpx;
+}
+
+.search button {
+  width: 25%;
+  position: absolute;
+  height: 80rpx;
+  line-height: 80rpx;
+  top: -2rpx;
+  right: 3rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+
+.store-box navigator {
+  display: flex;
+  background: #f7f7f7;
+  padding: 25rpx 0;
+  margin-bottom: 30rpx;
+  color: #999;
+  font-size: 30rpx;
+  border-radius: 15rpx;
+  border: 1px solid #b5b5b5;
+}
+
+.store-box navigator .s_name {
+  flex: 7;
+  padding-left: 45rpx;
+}
+
+.store-box navigator .s_dis {
+  flex: 2;
+}
+
+.store-box navigator .s_icon {
+  flex: 1;
+}
+
+.s_icon image {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+}
+
+.instructions {
+  width: 380rpx;
+  margin: 0 auto;
+  background: #6cc4c6;
+  border-radius: 10rpx;
+  color: #fff;
+  margin-top: 80rpx;
+  margin-bottom: 50rpx;
+}
+
+.introduce {
+  text-align: center;
+  background: #fff;
+}
+
+page>view {
+  padding-bottom: 135rpx;
+}
+
+.list {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  padding-bottom: 120rpx;
+}
+page>view {
+  padding-bottom: 0;
+  height: 90%;
+}

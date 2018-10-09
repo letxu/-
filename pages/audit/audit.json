@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "订单查询",
+"usingComponents": {
+  "dialog": "/components/dialog4/dialog"
+}
+  
+}

@@ -1,0 +1,21 @@
+<!--pages/invitation/invitation.wxml-->
+<view class="inviation">
+  <view>
+   <view class="top-img">
+    <image src="/images/promote.png"></image>
+  </view>
+
+  <view class='view_img'>
+    <image class='img' bindtap="previewImage" src='{{qrCode}}'></image>
+  </view>
+  <text class='search_no'>点击可保存图片</text>
+  </view>
+  <view class="introduce">
+    <dialog id='dialog' title='{{title}}' content='{{content}}' bind:confirmEvent="_confirmEvent">
+    </dialog>
+    <image src="/images/yaoqing_btn.png" class="btn-img" bindtap="showDialog"></image>
+
+  </view>
+
+  <include src="/components/footer/footer.wxml" />
+</view>

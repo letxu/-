@@ -1,0 +1,12 @@
+<!--components/dialog9/dialog.wxml-->
+<view class='wx_dialog_container' hidden="{{!isShow}}" >
+  <view class='wx-mask'></view>
+  <view class='wx-dialog'>
+    <icon type="clear" class='wx-dialog-btn' size="20" catchtap='_confirmEvent' />
+    <view class='wx-dialog-content '>
+      <image src="/images/index-mask.jpg"></image>
+
+    </view>
+
+  </view>
+</view>

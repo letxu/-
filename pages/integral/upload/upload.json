@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "上传截图",
+    "usingComponents": {
+      "dialog": "/components/dialog8/dialog"
+    }
+}

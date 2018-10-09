@@ -1,0 +1,19 @@
+<!--pages/siteNotice/siteNotice.wxml-->
+<view class="siteNotice">
+  <view class="top-img">
+    <image src="/images/notice.png"></image>
+  </view>
+
+  <scroll-view class="list" scroll-y="true" style='padding-bottom: {{height}}rpx;'>
+    <view>
+      <view class="siteBox" wx:for="{{data}}" wx:for-index='key'>
+        <text class="til">日期： {{item.sendTime}}</text>
+        <text class="til">标题： {{item.title}}</text>
+        <text class="long-dec {{item.isFold?'hide':'show'}}" id="{{key}}" bindtap="showAll">内容： {{item.content}}</text>
+        <!-- <image class="arrow" src=" {{isFold?'/images/all.png':'/images/search.png'}}" bindtap="showAll"></image> -->
+      </view>
+    </view>
+  </scroll-view>
+
+  <include src="/components/footer/footer.wxml" />
+</view>

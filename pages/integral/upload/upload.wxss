@@ -1,0 +1,57 @@
+/* pages/upload/upload.wxss */
+
+.group-body {
+  background: #fff;
+  padding: 20rpx;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.group-body .input-list {
+  margin: 0;
+  border: none;
+}
+
+.s_msg{
+  width: 100%;
+  margin-bottom: 100rpx
+}
+
+.note {
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  background: #f7f7f7;
+  display: flex;
+  border: 1px solid #b5b5b5;
+  border-radius: 15rpx;
+}
+
+.note text {
+  color: #999;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  flex: 1;
+  line-height: 80rpx;
+}
+
+.note input {
+  flex: 9;
+  padding: 17rpx 10rpx 13rpx;
+  
+  font-size: 30rpx;
+  color: #999;
+}
+
+button {
+  width: 40%;
+  margin: 0 auto 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #fff;
+  padding-left: 0;
+}
+
+.btn-img {
+  width: 300rpx;
+}

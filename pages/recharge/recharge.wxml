@@ -1,0 +1,4 @@
+<!-- 充值说明 -->
+<view>
+  <web-view src="http://www.ygwl.xin/"></web-view>
+</view>

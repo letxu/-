@@ -1,0 +1,35 @@
+<!--pages/login/login.wxml-->
+<!-- 登录页面 -->
+<view class="login">
+  <!-- <view class="userinfo">
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  </view> -->
+  <view class="logo">
+    <image src="/images/logo.png"></image>
+  </view>
+  <view class="section">
+    <text>手机号码</text>
+    <input class="num" type="number" maxlength="11" bindinput="inputPhoneNum"  />
+
+  </view>
+  <view class="section message-section">
+    <text>短信验证</text>
+    <input class="message" type="number" bindinput="addCode" />
+    <text wx:if="{{send}}" class="sendMsg" bindtap="sendMsg">发 送</text>
+    <text wx:if="{{alreadySend}}" class="sendMsg" >{{second+"s重新发送"}}</text>
+  </view>
+  <button   open-type="getUserInfo"   bindgetuserinfo="getUserInfo">登入</button>
+  <view class="fonts"><text>N E V E R </text><text> S E T T L E</text> </view> 
+  <checkbox-group bindchange="checkboxChange">
+    <label class="checkbox" >
+      <checkbox  checked="{{checked}}" />我已阅读并同意 
+    </label>
+  <view class="container" >
+    <dialog id='dialog' title='{{title}}' content='{{content}}' bind:confirmEvent="_confirmEvent">
+    </dialog> 
+      <text bindtap="showDialog">用户协议</text>
+  </view>
+
+  </checkbox-group>
+
+</view>

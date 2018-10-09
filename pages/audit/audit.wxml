@@ -1,0 +1,100 @@
+<!-- 订单页面 -->
+<view class="{{hasMask ? 'noscroll' : ''}}">
+  <view class="top-img">
+    <image src='/images/review.png'></image>
+  </view>
+  <form bindsubmit="formSubmit" report-submit='true'>
+    <view class="section">
+
+      <picker name="platform" bindchange="bindPickerChange" range="{{platformArray}}" range-key='name' value='{{platformIndex}}'>
+
+        <view class="picker">
+
+          {{platformArray[platformIndex].name}}
+          <view class="select-icon">
+            <image src="/images/select-icon.png"></image>
+          </view>
+        </view>
+      </picker>
+    </view>
+
+    <view class="section">
+      <picker name="shop" bindchange="bindMultiPickerChange" range="{{shopArray}}" range-key='name' value='{{shopIndex}}'>
+        <view class="picker">
+          {{shopArray[shopIndex].name}}
+          <view class="select-icon">
+            <image src="/images/select-icon.png"></image>
+          </view>
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <input type="number" class="info" name="orderId" value="{{order}}" bindinput="bindKeyInput" placeholder="输入订单号" />
+    </view>
+
+    <view class="  img-upload">
+      <view class=" img-add" bindtap="chooseImage">
+        上传订单小票图片
+        <view class="icon">
+          <text>+</text>
+        </view>
+      </view>
+      <input type='text' name="pics" value='{{pics}}' style='display:none;'></input>
+      <view class="img-item" wx:for="{{uploadimgs}}" wx:key="{{index}}">
+        <icon type="clear" size="20" color="red" style="display:none;" data-index="{{index}}" />
+        <image src="{{item}}" mode="aspectFill"></image>
+      </view>
+    </view>
+    <view class="s_msg">*返现金额不含配送费</view>
+<view class="s_msg">* 审核流程：【购买沙拉】→【审核返现】→【选择下单渠道、门店、订单号、上传截图】→【审核成功-微信返现】→【审核失败-微信提示失败原因】</view>
+     <view class="s_msg">*示例图片</view>
+    <view class="audit-img">
+		  <image  wx:for="{{imgalist}}" wx:for-item="image" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+	  </view>
+
+    <view class="introduce" style='text-align:center;margin-top:100rpx'>
+      <dialog id='dialog' title='{{title}}' content='{{content}}' bind:confirmEvent="_confirmEvent">
+      </dialog>
+
+      <button class="btn-img" form-type="submit">
+        <image src='/images/audit_btn1.png' class="btn-img"></image>
+      </button>
+      <image src='/images/m-search.png' class=" btn-img" bindtap='toQuery'></image>
+      <image src='/images/audit_btn2.png' class=" btn-img" bindtap='showDialog'></image>
+  
+
+    </view>
+  </form>
+  <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+  <view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-title">审核说明</view>
+    <view class="modal-content">
+      <view class="modal-input">
+        <view class='wx-dialog-content '>
+          <view>1、审核流程：【购买千色色沙拉】→【进入千色色会员+小程序】→【注册充值成为会员】→【首页-审核返现】→【选择购买渠道、下单门店、输入订单号】→【个人-返现查询】→【审核成功-通过微信返现】→【审核失败-微信提醒失败原因】</view>
+          <view>2、充值成功后的订单可享受会员权益。</view>
+          <view>3、平台币不可兑换现金。</view>
+          <view>4、平台币无法抵充部分消费款，如余额不足应及时充值。</view>
+          <view>5、外卖订单，返现部分为减去配送费后的金额。配送费以结算明细中的金额为准。</view>
+          <view>6、订单手机号应与会员注册手机号码一致，否则将审核失败。</view>
+          <view>7、平台币到期后会转为冻结状态，充值或邀请好友可激活冻结平台币。</view>
+          <view>8、审核失败原因</view>
+
+          <view>（1） 平台币到有效期后将无法通过审核</view>
+          <view>（2） 订单号输入错误将无法通过审核</view>
+          <view>（3） 下单门店选择错误时将无法通过审核</view>
+          <view>（4） 下单门店不参与此活动将无法通过审核</view>
+          <view>（5） 平台币余额不足以扣除这笔餐费时将无法通过审核</view>
+          <view>（6） 下单超过48小时后仍未提交审核将无法通过审核</view>
+          <view>（7） 其他</view>
+          <view>9、本次活动所有解释权归千色色沙拉所有。</view>
+        </view>
+      </view>
+    </view>
+    <view class="modal-footer">
+      <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+      <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+    </view>
+  </view>
+  <include src="/components/footer/footer.wxml" />
+</view>

@@ -1,0 +1,30 @@
+<!-- 积分活动页面 -->
+<view>
+
+  <view class="top-img">
+    <image src="/images/earn.png"></image>
+  </view>
+  <!-- 积分说明 -->
+  <view class="wrap-item" bindtap='signIn'>
+    <view hover-class="none">
+      <image src="/images/qiandao.png" class="tab-image" />
+    </view>
+  </view>
+  <view class="wrap-item" bindtap='wxSport'>
+    <view hover-class="none">
+      <image src="/images/sport.png" class="tab-image" />
+    </view>
+  </view>
+  <view class="wrap-item">
+    <navigator url="/pages/integral/upload/upload" hover-class="none">
+      <image src="/images/saitu.png" class="tab-image" />
+    </navigator>
+  </view>
+  <view class="container" style='text-align:center'>
+    <dialog id='dialog' title='{{title}}' content='{{content}}' bind:confirmEvent="_confirmEvent">
+    </dialog>
+    <image src='/images/active_btn.png' class=" btn-img instructions" bindtap='showDialog'></image>
+
+  </view>
+  <include src="/components/footer/footer.wxml" />
+</view>

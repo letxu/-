@@ -1,0 +1,26 @@
+<!--components/Dialog/dialog.wxml-->
+
+
+<view class='wx_dialog_container' hidden="{{!isShow}}">
+  <view class='wx-mask'></view>
+  <view class='wx-dialog'>
+    <icon type="clear" class='wx-dialog-btn' size="20" catchtap='_confirmEvent' />
+    <view class='wx-dialog-title' hidden='{{title==""}}'>{{title}}</view>
+    <view class='wx-dialog-content'>
+      <view>千色色沙拉在经过2年的发展过后，已成为具有200万用户的沙拉品牌，我们希望为关心和支持我们的用户，打造定制一套回馈、增值奖励的超级会员系统，更多的权益策略将在不断完善中，</view>
+      <view>1. 通过所有销售渠道购买到的千色色沙拉，均可同时享受超级会员的优惠政策。</view>
+      <view>充值299立赠20（有效期为90天）</view>
+      <view>充值699立赠60（有效期为120天）</view>
+      <view>充值1499立赠160（有效期为180天）</view>
+      <view>
+        2、超级会员将获得个人专属推广二维码，邀请好友并注册充值后将获得30元平台币，可在个人中心-我的平台币查询，推荐人数不限。（二维码仅限本人使用，因操作不当造成的损失，恕千色色概不负责；必须通过分享的个人二维码链接充值，才可获得30元平台币）</view>
+      <view>3、超级会员专属积分活动为每日签到、微信运动兑换、晒图得积分，赢取积分可兑换平台币。</view>
+      <view>4、超级会员可优先获得千色色沙拉的内部产品试吃活动。</view>
+      <view>5、超级会员可优先获得千色色沙拉战略合作商的优惠政策。</view>
+      <view>6、超级会员将享受更优良的售后服务，餐品质量问题无条件退款。</view>
+      <view>7、本次活动所有解释权归千色色沙拉所有。</view>
+    </view>
+
+
+  </view>
+</view>

@@ -1,0 +1,64 @@
+/* pages/invitation/invitation.wxss */
+
+.top-img {
+  margin-bottom: 20rpx;
+}
+
+.view_img {
+  text-align: center;
+  margin-top: 0rpx;
+  margin-bottom: 0;
+}
+
+.view_img .img {
+  width: 440rpx;
+  margin: 0 auto;
+  height: 772rpx;
+}
+
+.search_no {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+button {
+  width: 40%;
+  margin: 100rpx auto 30rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #fff;
+  letter-spacing: 5rpx;
+}
+
+.button-hover {
+  color: #fff !important;
+}
+
+.instructions {
+  width: 320rpx;
+  margin: 0 auto;
+  border-radius: 5rpx;
+  color: #fff;
+  margin-top: 50rpx;
+  text-align: center;
+}
+
+.introduce {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.btn-img {
+  width: 306rpx;
+  height: 60rpx;
+}
+
+@media (min-height:673px) and (max-height:724px) {
+  .view_img .img {
+    width: 520rpx;
+    height: 932rpx;
+  }
+}

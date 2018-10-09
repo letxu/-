@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/recharge/recharge",
+    "pages/user/user",
+    "pages/audit/audit",
+    "pages/integral/integral",
+    "pages/integral/upload/upload",
+    "pages/store/store",
+    "pages/store/storeDetail/storeDetail",
+    "pages/user/myMoney/myMoney",
+    "pages/user/invitation/invitation",
+    "pages/user/query/query",
+    "pages/user/myIntegral/myIntegral",
+    "pages/user/invitedRecord/invitedRecord",
+    "pages/user/siteNotice/siteNotice",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  }
+}

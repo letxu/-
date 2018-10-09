@@ -1,0 +1,62 @@
+/* pages/invitedRecord/invitedRecord.wxss */
+.friend-box{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 100rpx;
+}
+.friend-box view{
+  width: 50%;
+  display: flex;
+  text-align: center;
+  flex-direction:column;
+  margin-top: 50rpx;
+}
+
+.friend-box view image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin: 0 auto 30rpx;
+}
+.friend-box view text{
+  width: 200rpx;
+  text-align: center;
+  font-size: 30rpx;
+  padding:10rpx 0rpx;
+  display: inline-block;
+  border-radius: 15rpx;
+  background: #f7f7f7;
+  margin: 0 auto;
+  color: #999;
+  border: 1px solid #b5b5b5;
+}
+.introduce{
+  text-align: center
+}
+.instructions{
+  width: 320rpx;
+  margin: 0 auto;
+  border-radius: 5rpx;
+  color:#fff;
+  margin-top: 50rpx;
+  
+}
+.invite_img{
+  width: 100%;
+  position: relative
+}
+.invite_img image{
+  width: 100%;
+  height: 350rpx;
+}
+.invite_img .wx-dialog-btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #fff;
+  border-radius: 50%
+}
+.top-img{
+  margin-bottom: 20rpx;
+}

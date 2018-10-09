@@ -1,0 +1,13 @@
+<!-- 底部 -->
+<view class="footer">
+  <image src="/images/footer-top.png"></image>
+  <view class="footer-tab">
+
+    <view bindtap="Navigation" data-index="{{tabIndex}}" wx:for="{{footerTab}}" data-id="{{item.id}}" class="{{item.active}}">
+
+        <image src="{{item.pic}}"></image>
+   
+    </view>
+
+  </view>
+</view>

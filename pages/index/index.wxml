@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view class="index">
+  <view class="my-swiper">
+    <swiper class="swiper-box" indicator-dots="{{indicatorDots}}" circular="{{circular}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{data}}">
+        <swiper-item>
+          <image src="{{item.pic}}" class="slide-image" height="150" bindtap="{{item.method}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- 分类导航 -->
+  <view class="index-tab">
+
+    <view class="wrap-item">
+      <!-- 充值说明页面 -->
+      <!-- 订单页面 -->
+      <!-- 积分活动页面 -->
+      <!-- 附近店铺页面 -->
+      <navigator url="/pages/recharge/recharge" hover-class="none">
+        <image src="/images/index1_01.jpg" class="tab-image" />
+        <image src="/images/index1_02.jpg" class="tab-image1" />
+      </navigator>
+    </view>
+    <view class="wrap-item">
+      <navigator url="/pages/audit/audit" hover-class="none">
+        <image src="/images/index2_01.jpg" class="tab-image" />
+        <image src="/images/index2_02.jpg" class="tab-image1" />
+      </navigator>
+    </view>
+    <view class="wrap-item">
+      <navigator url="/pages/integral/integral" hover-class="none">
+        <image src="/images/index3_01.jpg" class="tab-image" />
+        <image src="/images/index3_02.jpg" class="tab-image1" />
+      </navigator>
+    </view>
+    <view class="wrap-item">
+      <navigator hover-class="none" bindtap='invited' >
+        <image src="/images/index4_01.jpg" class="tab-image" />
+        <image src="/images/index4_02.jpg" class="tab-image1" />
+      </navigator>
+    </view>
+  
+    <view class="clear"></view>
+    <view class="cn-font"> 
+      <text>生活从此不将就 时尚轻食领潮流</text>
+    </view>
+    <view class="contact">
+      <view>全国客服
+        <text bindtap="tel"> 400-0099-727 / </text> 品牌加盟
+        <text bindtap="tel1">400-1188-727</text> </view>
+    </view>
+  </view>
+  <view class="introduce">
+    <dialog id='dialog' title='{{title}}' content='{{content}}' bind:confirmEvent="_confirmEvent">
+    </dialog>
+  </view>
+  <include src="/components/footer/footer.wxml" />
+</view>

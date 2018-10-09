@@ -1,0 +1,71 @@
+<view class="container">
+  <view class="top-img">
+    <image src="/images/order.png"></image>
+  </view>
+  <view class="userinfo">
+
+    <image class="userinfo-avatar" src="{{avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{nickName}}</text>
+  </view>
+  <view class="usermotto">
+
+    <view class="{{isExpire?'wrap-item money':'wrap-item'}}">
+      <navigator url="/pages/user/myMoney/myMoney" hover-class="none">
+        <image src="/images/dongjie.jpg" hidden='{{isExpire}}'></image>
+        <text>我的平台币：{{money}}</text>
+      </navigator>
+    </view>
+    <view class="wrap-item">
+      <navigator url="/pages/user/myIntegral/myIntegral" hover-class="none">
+        我的积分：{{point}}
+      </navigator>
+    </view>
+    <view class="wrap-item invited">
+      <navigator bindtap='invited' hover-class="none">
+        邀请好友
+        <image src="/images/prefer.png"></image>
+      </navigator>
+    </view>
+    <view class="wrap-item">
+      <navigator url="/pages/user/query/query" hover-class="none">
+        返现查询
+      </navigator>
+    </view>
+    <view class="wrap-item">
+
+      <navigator url="/pages/user/invitedRecord/invitedRecord" hover-class="none">
+        邀请记录
+      </navigator>
+    </view>
+    <view class="wrap-item">
+
+      <navigator url="/pages/user/siteNotice/siteNotice" hover-class="none">
+        站内通知
+      </navigator>
+    </view>
+
+
+  </view>
+  <view class="service">
+    <button open-type="contact">
+      <image src="/images/service.png"></image>联系客服千小妹
+    </button>
+  </view>
+  <view class="tel">
+    <text>
+      客服中心: 400-0099-727
+    </text>
+  </view>
+  <image src="/images/user_btn1.png" class="btn-img" bindtap='newUser'></image>
+
+  <view class="container" style='margin-top:20rpx;'>
+    <dialog id='dialog' title='{{title}}' content='{{content}}' bind:confirmEvent="_confirmEvent">
+    </dialog>
+    <image bindtap='showDialog' src="/images/user_btn2.png" class="btn-img"></image>
+
+  </view>
+
+
+  <include src="/components/footer/footer.wxml" />
+
+</view>

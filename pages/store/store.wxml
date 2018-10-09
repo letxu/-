@@ -1,0 +1,32 @@
+<!-- 附近店铺页面 -->
+<view>
+  <view class="top-img">
+    <image src="/images/store.png"></image>
+  </view>
+  <view class="store">
+    <view class="store-tab">
+      <text bindtap="switchTab" data-index="{{index}}" class="{{curNavId == item.id ?'active':''}}" wx:for="{{sort}}" wx:key="item.id" data-id="{{item.id}}">{{item.title}}</text>
+
+    </view>
+    <view class="search">
+      <image src="/images/search.png"></image>
+
+      <input type="text" placeholder='输入门店名称' placeholder-style=' color:#dbdddc' value="{{searchText}}" bindinput="searchTextChange"></input>
+
+
+      <button bindtap="submitSearch">搜索</button>
+    </view>
+
+  </view>
+
+  <view class="store-box list" style='padding-bottom: {{height}}rpx;' wx:if="{{data}}">
+    <navigator wx:for="{{data}}" wx:key="{{item.id}}" url="storeDetail/storeDetail?id={{item.id}}&name={{item.name}}" hover-class="navigator-hover">
+      <view class="s_name">{{item.name}}</view>
+      <view class="s_dis" hidden='{{curIndex==0}}'>{{item.distance}}</view>
+      <view class="s_icon">
+        <image src="/images/icon-right.png"></image>
+      </view>
+    </navigator>
+  </view>
+  <include src="/components/footer/footer.wxml" />
+</view>

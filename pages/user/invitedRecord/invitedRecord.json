@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "邀请记录",
+  "usingComponents": {
+    "dialog": "/components/dialog6/dialog"
+  },
+  "enablePullDownRefresh": true
+}

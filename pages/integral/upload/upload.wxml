@@ -1,0 +1,52 @@
+<!--pages/upload/upload.wxml-->
+<view>
+  <view class="top-img">
+    <image src="/images/earn.png"></image>
+  </view>
+  <view class="group-body">
+    <form bindsubmit="submit" report-submit='true'>
+      <view class="img-upload">
+        <view class=" img-add" bindtap="chooseImage">
+          上传截图
+          <view class="icon">
+            <text>+</text>
+          </view>
+        </view>
+        <input type='text' name="pics" value='{{pics}}' style='display:none;'></input>
+        <view class="img-item" wx:for="{{uploadimgs}}" wx:key="{{index}}">
+          <icon type="clear" size="20" color="red" style="display:none;" data-index="{{index}}" />
+          <image src="{{item}}" mode="aspectFill"></image>
+        </view>
+      </view>
+      <view class="note">
+        <text>备注</text>
+        <input type="text" value='{{des}}' bindinput='desChange'></input>
+      </view>
+      <view class="container" style='text-align:center;margin-top:150rpx'>
+        <dialog id='dialog' title='{{title}}' content='{{content}}' bind:confirmEvent="_confirmEvent">
+        </dialog>
+
+        <button class="btn-img" form-type="submit">
+          <image src='/images/audit_btn1.png' class="btn-img"></image>
+        </button>
+        <image src='/images/active_btn1.png' class=" btn-img" bindtap='showDialog'></image>
+      </view>
+    </form>
+  </view>
+  <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+  <view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-title">活动说明</view>
+    <view class="modal-content">
+      <view class="modal-input">
+        <view class='wx-dialog-content '>
+               <text> 通过朋友圈、微博、抖音传播；发送截图至平台审核通过后将获得100积分。（审核须知：截图必须清晰的展现千色色的logo及产品，无屏蔽他人并发布一小时以上。）</text>
+        </view>
+      </view>
+    </view>
+    <view class="modal-footer">
+      <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+      <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+    </view>
+  </view>
+  <include src="/components/footer/footer.wxml" />
+</view>

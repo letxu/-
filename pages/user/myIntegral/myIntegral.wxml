@@ -1,0 +1,27 @@
+<view class="query">
+  <view class="top-img">
+    <image src="/images/my-integral.png"></image>
+  </view>
+  <scroll-view scroll-y="true" style='padding-bottom: {{height}}rpx;'>
+    <view class="queryDate" wx:for="{{data}}">
+      <view class="timer">
+        <image src="/images/discount.png"></image>{{item.date}}
+      </view>
+      <view class="moneyBox" wx:for="{{item.list}}">
+        <view style="color:{{item.style}}">
+          <text class="name">{{item.type}}</text>
+          <text class="num">{{item.money}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="introduce ">
+    <dialog id='dialog' title='{{title}}' content='{{content}}' bind:confirmEvent="_confirmEvent">
+    </dialog>
+    <view class="integra-btns">
+      <image bindtap="exchange" src="/images/integral_btn1.png" class="btn1 btn-img"></image>
+      <image bindtap="showDialog" class="instructions btn-img" src="/images/integral_btn2.png"></image>
+    </view>
+  </view>
+  <include src="/components/footer/footer.wxml" />
+</view>

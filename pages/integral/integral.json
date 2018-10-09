@@ -1,0 +1,7 @@
+{
+ 
+  "navigationBarTitleText": "积分活动",
+  "usingComponents": {
+    "dialog": "/components/dialog7/dialog"
+  }
+}

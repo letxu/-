@@ -1,0 +1,25 @@
+<!--pages/invitedRecord/invitedRecord.wxml-->
+
+<view>
+  <view class="top-img" >
+    <image src="/images/yaoqing.png"></image>
+  </view>
+  <view class="invite_img" hidden='{{bol}}'>
+     <icon type="clear" class='wx-dialog-btn' size="30" catchtap='close' />
+   <image src="{{invitePic}}"></image>
+  </view>
+  <view class="friend-box" style='padding-bottom: {{height}}rpx;'>
+    <view wx:for="{{data}}">
+      <image src="{{item.avatar}}"></image>
+      <text>{{item.nickname}}</text>
+    </view>
+  </view>
+  <view class="introduce">
+    <dialog id='dialog' title='{{title}}' content='{{content}}' bind:confirmEvent="_confirmEvent">
+    </dialog>
+       <image src="/images/yaoqing_btn.png" class="instructions btn-img" bindtap="showDialog"></image>
+
+  </view>
+
+  <include src="/components/footer/footer.wxml" />
+</view>

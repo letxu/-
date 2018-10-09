@@ -1,0 +1,137 @@
+/* pages/login/login.wxss */
+
+page {
+  background: #7db8bc;
+}
+
+.login {
+  padding: 100rpx;
+}
+.logo {
+  text-align: center;
+}
+.logo image{
+  width:60%;
+  margin: 50rpx auto 100rpx;
+  height: 80rpx;
+}
+.section {
+  margin: 16rpx;
+  padding: 16rpx;
+  color: #fff;
+  margin-bottom: 30rpx;
+}
+
+.section text {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  color: #f7f7f7;
+  letter-spacing: 5rpx;
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+  font-family: "宋体";
+  margin-top: 5rpx;
+}
+.container{
+  float: right;
+  position: relative;
+  right: 85rpx;
+
+}
+
+.message {
+  display: inline-block;
+  width: 210rpx;
+}
+
+text.sendMsg {
+  display: inline-block;
+  width: 40%;
+  height: 70rpx;
+  line-height: 70rpx;
+  float: right;
+  background: #a2cbcd;
+  border-radius: 15rpx;
+  font-size: 26rpx;
+  padding: 0 15rpx;
+}
+
+button {
+  margin: 16rpx;
+}
+
+.sendMsg {
+  font-size: 12rpx;
+  margin-right: 0;
+  padding: 0;
+  height: inherit;
+  width: 80rpx;
+}
+
+.section input {
+  border: 1px solid #fff;
+  padding: 0 20rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 15rpx;
+  font-size: 30rpx;
+}
+
+button {
+  width: 60%;
+  color: #7db8bc;
+  letter-spacing: 10rpx;
+  border-radius: 10rpx;
+  margin: 100rpx auto 20rpx;
+  height: 70rpx;
+  font-size: 40rpx;
+  line-height: 70rpx;
+
+  font-family: "宋体";
+}
+
+checkbox-group {
+  padding-left: 70rpx;
+  margin-top: 50rpx;
+}
+.checkbox {
+  color: #f7f7f7;
+  font-size: 30rpx;
+  vertical-align: middle;
+}
+
+.fonts {
+  font-size: 20rpx;
+  color: #fff;
+  text-align: center;
+}
+checkbox-group text{
+  color:#f7f7f7;
+  font-size: 28rpx;
+}
+.fonts text {
+  letter-spacing: 3rpx;
+}
+
+.fonts text:first-child {
+  margin-right: 20rpx;
+}
+checkbox .wx-checkbox-input{
+   border-radius: 50%;
+   width: 35rpx; 
+   height: 35rpx; 
+  vertical-align: middle;
+   background: #fff;
+   border: 1px solid #fff;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   border-radius: 50%;
+   width: 40rpx; 
+   height: 40rpx; 
+   line-height: 40rpx;
+   color: #7db8bc;
+  
+   border: none;
+
+}

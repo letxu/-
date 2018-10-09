@@ -1,0 +1,27 @@
+/* pages/integral/integral.wxss */
+/* @import "../components/mask/mask.wxss"; */
+.wrap-item{
+  width: 80%;
+  margin: 0 auto 5rpx;
+  height: 260rpx;
+}
+.wrap-item image{
+  width: 100%;
+  margin: 0 auto;
+ height: 260rpx
+}
+.instructions{
+  width: 280rpx;
+  margin: 0 auto;
+  height: 55rpx;
+  line-height: 55rpx;
+  font-size: 30rpx;
+  background: #6cc4c6;
+  border-radius: 5rpx;
+  color:#fff;
+  margin-top: 30rpx
+}
+.introduce{
+  text-align: center
+}
+

@@ -1,0 +1,45 @@
+/* pages/storeDetail/storeDetail.wxss */
+.store-title{
+  width: 80%;
+  margin: 50rpx auto 10rpx;
+  text-align: center;
+  color: #444;
+}
+.en-font{
+  color: #999;
+  font-size: 20rpx;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+.store-information{
+  width: 90%;
+  background: #f7f7f7;
+  margin: 30rpx auto 0;
+  padding: 20rpx 0;
+  border-radius: 15rpx;
+  display: flex;
+  font-size: 30rpx;
+  color: #9d9d9f;
+  border: 1px solid #b5b5b5
+}
+.store-information .icon{
+  text-align: center;
+  margin: 0 20rpx;
+  flex: 1
+
+}
+.store-information .icon image{
+   width: 35rpx;
+  height: 35rpx;
+  margin-top: 3rpx;
+}
+.store-information .i_way{
+  flex: 3;
+  padding-right:15rpx;
+
+}
+.store-information .content{
+  flex: 6;
+  padding-right: 30rpx;
+  line-height: 45rpx
+}

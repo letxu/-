@@ -1,0 +1,35 @@
+/* pages/siteNotice/siteNotice.wxss */
+.siteBox{
+  width: 70%;
+  margin: 0 auto 30rpx;
+  background: #f7f7f7;
+  border: 1px solid #b5b5b5;
+  padding: 20rpx 50rpx;
+  border-radius: 15rpx;
+}
+.siteBox text.til{
+  display: inline-block;
+  width: 100%;
+  color: #999;
+  font-size: 30rpx;
+}
+.long-dec{
+  display: -webkit-box;/*关键属性*/
+  color: #999;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  word-break: break-all;
+  
+  -webkit-box-orient: vertical;/* 关键属性 */
+  -webkit-line-clamp:3;/* 关键属性 */
+  overflow: hidden;/* 关键属性 */
+  text-overflow:ellipsis;/* 超出内容显示省略号*/
+}
+.hide{
+ display: -webkit-box;
+  font-size: 30rpx;
+}
+.show{
+ display: block;
+  font-size: 28rpx;
+}
